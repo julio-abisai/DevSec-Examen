@@ -6,10 +6,14 @@ Crear una nueva carpeta, por ejemplo llamada moodle-docker.
 Entrar a la carpeta:
 
 mkdir moodle-docker
+
 cd moodle-docker
+
 
 ### Paso 2: Crear archivo docker-compose.yml
 Dentro de la carpeta, crear un archivo llamado docker-compose.yml.
+
+![Imagen codigo](/img/Imagen1.jpg)
 
 Agregar la configuración de servicios:
 
@@ -59,7 +63,9 @@ volumes:
   mariadb_data:
   moodle_data:
   moodledata_data:
-Paso 3: Levantar los contenedores
+
+
+### Paso 3: Levantar los contenedores
 Ejecutar el comando:
 
 docker-compose up -d
@@ -74,6 +80,7 @@ Entrar a navegador y abrir:
 http://localhost:8080
 
 Deberías ver la pantalla de instalación de Moodle.
+
 
 ### Paso 5: Configurar Moodle
 Seleccionar idioma (Español).
@@ -104,13 +111,46 @@ Ingresar datos para el usuario administrador de Moodle:
 
 Nombre, correo, contraseña segura, etc.
 
+![Imagen codigo](/img/Imagen2.jpg)
+
 ### Paso 8: Crear primer curso
 Desde el panel de Moodle, crear un nuevo curso llamado, por ejemplo, "Curso 1".
+
+![Imagen codigo](/img/Imagen3.jpg)
+
+Le añadimos una descripción al curso:
+
+![Imagen codigo](/img/Imagen4.jpg)
+
+Asignamos el formato de nuestro Curso: 
+
+![Imagen codigo](/img/Imagen5.jpg)
+
+Podemos visualizar nuestro curso creado con sus especificaciones: 
+
+![Imagen codigo](/img/Imagen6.jpg)
 
 ### Paso 9: Agregar usuarios
 Crear o registrar usuarios.
 
+![Imagen codigo](/img/Imagen7.jpg)
+
+![Imagen codigo](/img/Imagen9.jpg)
+
+![Imagen codigo](/img/Imagen10.jpg)
+
+![Imagen codigo](/img/Imagen13.jpg)
+
+Visualizamos a nuestros usuarios en nuestro curso:
+
+![Imagen codigo](/img/Imagen11.jpg)
+
 Asignar roles como profesor, estudiante, etc.
+
+![Imagen codigo](/img/Imagen12.jpg)
+
+Visualizamos a nuestros usuarios con sus respectivos roles en el curso: 
+![Imagen codigo](/img/Imagen16.jpg)
 
 ### Paso 10: Finalización
 Moodle queda configurado y funcionando dentro de contenedores Docker.
